@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Prompt', sans-serif;
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+}
+
+nav .logo{
+width: 150px;
+cursor: pointer;
+padding-left: 160px;
+}
+
+nav .logo:hover{
+    
+    transition: transform 0.8s;
+    transform: translateX(20px);
+}
+
+nav .menu{
+width: 50px;
+cursor: pointer;
+margin-right: 160px;
+}
+nav ul{
+    margin-left: 100px;
+}
+
+nav ul li{
+    display: inline;
+    margin-right: 45px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+    position: relative;
+    padding: 10px;
+}
+
+nav ul li a::before{
+    content: '';
+    width: 100%;
+    height: 0px;
+    background-color: #d9f688;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    bottom: -5px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    transition: height 0.5s;
+}
+
+nav ul li a:hover:before{
+    height: 85px;
+}
+
+.feature1{
+    width: 500px;
+    position: relative;
+    left: 820px;
+    margin-top: 25px;
+}
+.feature1:hover{
+    transition: transform 0.8s;
+    transform: translateY(20px);
+}
+
+
+.thumbnail{
+    width: 270px;
+    position: absolute;
+    right: 470px;
+    top: 470px;
+    border-radius: 8px;
+    box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.2);
+}
+.thumbnail:hover{
+    transition: transform 0.8s;
+    transform: translateY(-20px);
+}
+
+h1{
+    display: inline;
+    position: absolute;
+    left: 160px;
+    top: 260px;
+    font-size: 40px;
+    font-weight: 600;
+}
+h1:hover{
+    
+    transition: transform 0.8s;
+    transform: translateX(20px);
+}
+
+
+.col a{
+   text-decoration: none;
+   border-radius: 30px; 
+   background-color:#d9f688 ;
+   padding: 18px 50px;
+   color: black;
+   position: absolute;
+   top: 400px;
+   left: 160px;
+   font-weight: 700;
+   
+
+}
+
+.col a:hover{
+    
+    transition: transform 0.8s;
+    transform: translateX(20px);
+}
